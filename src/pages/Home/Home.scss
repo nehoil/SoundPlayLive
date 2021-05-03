@@ -1,0 +1,30 @@
+@import '../../assets/scss/global.scss';
+
+.home-container {
+  padding-top: 50px;
+}
+
+.home-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  & > * {
+    margin: 0 10px;
+    border-radius: 8px;
+    min-height: 350px;
+    min-width: 300px;
+    max-width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    @include for-normal-layout {
+      margin: 10px;
+      min-height: 350px;
+      max-height: 350px;
+      min-width: 80%;
+      max-width: 80%;
+    }
+  }
+}

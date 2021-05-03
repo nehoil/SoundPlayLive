@@ -1,0 +1,36 @@
+@import '../../assets/scss/global.scss';
+
+.navbar-container {
+  .logo {
+    svg {
+      margin-right: 5px;
+      color: $clr1;
+    }
+  }
+
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 12px;
+
+  .navbar-content {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 10px;
+      li {
+        margin: 10px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

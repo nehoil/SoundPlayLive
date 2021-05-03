@@ -1,0 +1,57 @@
+@import '../../../assets/scss/global.scss';
+
+.search-results-container {
+  padding: 10px;
+  ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+
+    li {
+      width: 100%;
+      padding: 2px;
+      border-radius: 7px;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.151);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:hover {
+        cursor: pointer;
+        color: $clr1;
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 100px));
+    grid-gap: 10px;
+    justify-content: center;
+    .result {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &:hover {
+        cursor: pointer;
+        color: $clr1;
+      }
+      .title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    img {
+      width: 50px;
+    }
+  }
+}
+
+.no-results {
+  padding: 10px;
+  color: grey;
+
+  p {
+    width: 20ch;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../../assets/scss/global.scss';
+
+    .search-footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > * {
+            margin: 10px;
+        }
+        .view-btns {
+            display: flex;
+        & > * {
+            margin: 0 5px;
+            &:hover{
+                cursor: pointer;
+                color: $clr1;
+            }
+        }
+        }
+        .next-btn {
+            &:hover {
+                cursor: pointer;
+                color: $clr1;
+
+            }
+        }
+    }

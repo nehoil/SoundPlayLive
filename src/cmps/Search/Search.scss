@@ -1,0 +1,20 @@
+@import '../../assets/scss/global.scss';
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include for-normal-layout {
+    width: 80%;
+  }
+  input {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+  }
+  .ant-input-search
+    > .ant-input-group
+    > .ant-input-group-addon:last-child
+    .ant-input-search-button:not(.ant-btn-primary) {
+    border-top-right-radius: 7px;
+  }
+}

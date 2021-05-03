@@ -1,0 +1,50 @@
+@import '../../assets/scss/global.scss';
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  .title {
+    text-align: center;
+    font-weight: 600;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 1px solid rgba(158, 145, 145, 0.219);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .prev-img {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img,
+    .no-img {
+      cursor: pointer;
+    }
+  }
+  .no-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .click-to-play {
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+    &:hover {
+      cursor: pointer;
+      color: $clr1;
+    }
+  }
+  .start-animation {
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+  }
+}
