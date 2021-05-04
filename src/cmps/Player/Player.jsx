@@ -55,7 +55,9 @@ export default function Player({ song }) {
         )}
       </div>
       <ReactPlayer
-        style={{ display: 'none' }}
+      className="soundcloud-player"
+      width="10"
+      height="10"
         url={song.url}
         playing={isPlaying}
       />
