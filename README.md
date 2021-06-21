@@ -1,3 +1,3 @@
 # SoundPlay
 
-This project was develped by Nehoray Ilani using React 17.0.1.
+This project was developed by Nehoray Ilani using React 17.0.1.
